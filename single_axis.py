@@ -26,7 +26,7 @@ class SingleAxisKinematics:
 
 	
 	def calc_position(self, stepper_positions):
-		return [ stepper_positions[rail.get_name()] ]
+		return [ stepper_positions[self.rail.get_name()] ]
 
 
 	def set_position(self, newpos, homing_axes):
